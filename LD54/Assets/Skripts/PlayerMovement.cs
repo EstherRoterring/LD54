@@ -8,6 +8,7 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -426,6 +427,16 @@ public class PlayerMovement : MonoBehaviour
 		Gizmos.DrawWireCube(_backWallCheckPoint.position, _wallCheckSize);
 	}
     #endregion
+    
+    //Bei Ziel in nächste Scene wechseln
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+	    Debug.Log("player enter");
+	    if (other.gameObject.tag == "zielFlagge")
+	    {
+		    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+	    }
+    }
 }
 
-// created by Dawnosaur :D
+// created by Dawnosaur :D RAWWW!
