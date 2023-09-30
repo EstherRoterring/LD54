@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2944622253488964327}
   - component: {fileID: 2944622253488964320}
   - component: {fileID: 2944622253488964321}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlatformRechts
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,9 +135,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2944622254018780778}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Platform
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -172,7 +172,7 @@ GameObject:
   - component: {fileID: 2944622254642876765}
   - component: {fileID: 2944622254642876767}
   - component: {fileID: 2944622254642876766}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlatformMitteKurz
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 2944622254723582431}
   - component: {fileID: 2944622254723582425}
   - component: {fileID: 2944622254723582424}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlatformLinks
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -409,7 +409,7 @@ GameObject:
   - component: {fileID: 2944622254884887988}
   - component: {fileID: 2944622254884887990}
   - component: {fileID: 2944622254884887989}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlatformMitteLang
   m_TagString: Untagged
   m_Icon: {fileID: 0}

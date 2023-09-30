@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8674109564629269908}
   - component: {fileID: 2353969415318813590}
   - component: {fileID: 4977093980078823717}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: slight_Ast_Complete
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
