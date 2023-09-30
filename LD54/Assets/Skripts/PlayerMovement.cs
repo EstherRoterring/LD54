@@ -93,13 +93,13 @@ public class PlayerMovement : MonoBehaviour
 
 		if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
         {
-			Debug.Log("Jump");
+			//Debug.Log("Jump");
 			OnJumpInput();
         }
 
 		if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
 		{
-            Debug.Log("Small Jump");
+            //Debug.Log("Small Jump");
             OnJumpUpInput();
 		}
 		#endregion
