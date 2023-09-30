@@ -20,6 +20,7 @@ public class KameraSkript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        //Kamera zoomt raus
         if (Input.GetKey(zoomOut))
         {
             
@@ -30,6 +31,7 @@ public class KameraSkript : MonoBehaviour
             VcCamera.m_Lens.OrthographicSize = 4;
         }
 
+        //Kamera zeigt Ziel
         if (Input.GetKey(zielAnzeigen))
         {
             VcCamera.Follow = ziel.transform;
@@ -38,5 +40,6 @@ public class KameraSkript : MonoBehaviour
         {
             VcCamera.Follow = player.transform;
         }
+        
     }
 }
