@@ -18,15 +18,15 @@ public class ScenenManager : MonoBehaviour
         
     }
 
-    public void goToGameScene()
-    {
-        //Whatever we need here
-        SceneManager.LoadScene("GameScene00");
+    public void GoToGameScene(){
+        SceneManager.LoadScene("GameScene");
     }
     
-    public void Exit()
-    {
+    public void GoToMenu(){
+        SceneManager.LoadScene("TitleScene");
+    }
+
+    public void Exit(){
         Application.Quit();
     }
-    
 }
