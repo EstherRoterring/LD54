@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
 
 	//HOW TO: to add the scriptable object, right-click in the project window -> create -> Player Data
 	//Next, drag it into the slot in playerMovement on your player
-
+	public int availableJumps = 5;
 	public PlayerData Data;
 
 	#region Variables
@@ -324,7 +324,8 @@ public class PlayerMovement : MonoBehaviour
 		//Ensures we can't call Jump multiple times from one press
 		LastPressedJumpTime = 0;
 		LastOnGroundTime = 0;
-
+		availableJumps--;
+		Debug.Log(availableJumps);
 		#region Perform Jump
 		//We increase the force applied if we are falling
 		//This means we'll always feel like we jump the same amount 
