@@ -2468,10 +2468,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef88073e9d4c8b04f9c4ca49c6de4bf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tasteD: {fileID: 0}
-  tasteA: {fileID: 0}
-  tasteSpace: {fileID: 0}
-  tasteSlide: {fileID: 0}
+  tasteD: {fileID: 1897185305}
+  tasteA: {fileID: 902567089}
+  tasteSpace: {fileID: 892850061}
+  tasteSlide: {fileID: 1481264890}
 --- !u!1 &1893636124
 GameObject:
   m_ObjectHideFlags: 0
