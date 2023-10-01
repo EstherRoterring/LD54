@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5486314dfda55fc45aa37601589a0233, type: 3}
   m_Name: Floppo
   m_EditorClassIdentifier: 
-  gravityStrength: -40
-  gravityScale: 4.0774717
+  gravityStrength: -64
+  gravityScale: 6.523955
   fallGravityMult: 1.5
   maxFallSpeed: 20
   fastFallGravityMult: 2
@@ -26,9 +26,9 @@ MonoBehaviour:
   accelInAir: 0.6
   deccelInAir: 0.4
   doConserveMomentum: 1
-  jumpHeight: 5
+  jumpHeight: 8
   jumpTimeToApex: 0.5
-  jumpForce: 20
+  jumpForce: 32
   jumpCutGravityMult: 2
   jumpHangGravityMult: 0.4
   jumpHangTimeThreshold: 1
