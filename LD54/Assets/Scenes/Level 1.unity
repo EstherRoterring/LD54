@@ -810,7 +810,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.978384, y: -1.7884699, z: -10}
+  m_LocalPosition: {x: -7.9818587, y: -1.7884699, z: -10}
   m_LocalScale: {x: 0.2, y: 0.2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2383,6 +2383,30 @@ PrefabInstance:
       propertyPath: animator
       value: 
       objectReference: {fileID: 1845396366}
+    - target: {fileID: 6019743616225512553, guid: 986d79ccfebf2044d8f520695eed8ab0, type: 3}
+      propertyPath: _wallCheckSize.x
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019743616225512553, guid: 986d79ccfebf2044d8f520695eed8ab0, type: 3}
+      propertyPath: _wallCheckSize.y
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019743616225512553, guid: 986d79ccfebf2044d8f520695eed8ab0, type: 3}
+      propertyPath: _groundCheckSize.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019743616225512553, guid: 986d79ccfebf2044d8f520695eed8ab0, type: 3}
+      propertyPath: _slideLayer.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019743616225512553, guid: 986d79ccfebf2044d8f520695eed8ab0, type: 3}
+      propertyPath: groundSlidingMaxSpeed
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6019743616225512553, guid: 986d79ccfebf2044d8f520695eed8ab0, type: 3}
+      propertyPath: groundSlidingAcceleration
+      value: 1.8
+      objectReference: {fileID: 0}
     - target: {fileID: 6019743616225512556, guid: 986d79ccfebf2044d8f520695eed8ab0, type: 3}
       propertyPath: m_RootOrder
       value: 2
