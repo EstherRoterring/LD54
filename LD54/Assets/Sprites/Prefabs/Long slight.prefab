@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183166558956085}
   - component: {fileID: 6681183166558956084}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183166602599087}
   - component: {fileID: 6681183166602599086}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Long slight (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183166844152154}
   - component: {fileID: 6681183166844152149}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_2 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,7 +252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183166934651529}
   - component: {fileID: 6681183166934651528}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -336,7 +336,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183166962114044}
   - component: {fileID: 6681183166962114047}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_1 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -420,7 +420,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183167305154357}
   - component: {fileID: 6681183167305154356}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_0 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183167354583382}
   - component: {fileID: 6681183167354583377}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_0
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -587,7 +587,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6681183167517429186}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: Long slight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -623,7 +623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183167779215093}
   - component: {fileID: 6681183167779215092}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -707,7 +707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183167843062397}
   - component: {fileID: 6681183167843062396}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_0 (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -791,7 +791,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183167868578416}
   - component: {fileID: 6681183167868578419}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -875,7 +875,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6681183168131914325}
   - component: {fileID: 6681183168131914324}
-  m_Layer: 3
+  m_Layer: 6
   m_Name: slight_Ast2_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
