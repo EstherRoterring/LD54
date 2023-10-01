@@ -13,6 +13,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
+    
+    //For Animations
+    public Animator animator;
+    
     //Scriptable object which holds all the player's movement parameters. If you don't want to use it
     //just paste in all the parameters, though you will need to manuly change all references in this script
 
@@ -88,6 +92,10 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
+        //Speed ist wichtig für die animation
+        //Debug.Log(Mathf.Abs(RB.velocity.x));
+        animator.SetFloat("Speed", Mathf.Abs(RB.velocity.x));
+        
         #region TIMERS
         LastOnGroundTime -= Time.deltaTime;
         LastOnWallTime -= Time.deltaTime;
@@ -622,11 +630,12 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     //Bei Ziel in nächste Scene wechseln
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         //Debug.Log("player enter");
         if (other.gameObject.tag == "zielFlagge")
         {
+            Destroy(other.gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
