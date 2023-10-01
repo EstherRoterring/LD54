@@ -620,11 +620,12 @@ public class PlayerMovement : MonoBehaviour
     #endregion
 
     //Bei Ziel in nächste Scene wechseln
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         //Debug.Log("player enter");
         if (other.gameObject.tag == "zielFlagge")
         {
+            Destroy(other.gameObject);
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
