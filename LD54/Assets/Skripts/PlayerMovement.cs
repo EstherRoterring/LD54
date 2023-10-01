@@ -68,11 +68,11 @@ public class PlayerMovement : MonoBehaviour
     [Header("Checks")]
     [SerializeField] private Transform _groundCheckPoint;
     //Size of groundCheck depends on the size of your character generally you want them slightly small than width (for ground) and height (for the wall check)
-    [SerializeField] private Vector2 _groundCheckSize = new Vector2(0.49f, 0.03f);
+    [SerializeField] private Vector2 _groundCheckSize = new Vector2(0.7f, 0.1f);
     [Space(5)]
     [SerializeField] private Transform _frontWallCheckPoint;
     [SerializeField] private Transform _backWallCheckPoint;
-    [SerializeField] private Vector2 _wallCheckSize = new Vector2(0.5f, 1f);
+    [SerializeField] private Vector2 _wallCheckSize = new Vector2(0.2f, 0.15f);
 
     [Header("Layers & Tags")]
     [SerializeField] private LayerMask _groundLayer;
