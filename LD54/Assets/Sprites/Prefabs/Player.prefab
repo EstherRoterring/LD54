@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 6019743616225512559}
   - component: {fileID: 6019743616225512552}
   - component: {fileID: 6019743616225512553}
+  - component: {fileID: -8205624897343799080}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -279,6 +280,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   availableJumps: 5
+  groundSlidingMaxSpeed: 30
+  groundSlidingAcceleration: 1.5
+  canGroundSlide: 0
   Data: {fileID: 11400000, guid: bd7cad6856820dd448eef1202ac27b3a, type: 2}
   _groundCheckPoint: {fileID: 6019743615949723184}
   _groundCheckSize: {x: 0.49, y: 0.1}
@@ -288,6 +292,30 @@ MonoBehaviour:
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  _slideLayer:
+    serializedVersion: 2
+    m_Bits: 0
+--- !u!95 &-8205624897343799080
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019743616225512546}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 16f4e3e7bf6c0e14880fab685c4432ad, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &6019743616822950191
 GameObject:
   m_ObjectHideFlags: 0
