@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 2944622254018780778}
   - component: {fileID: 7117329260050538848}
   m_Layer: 3
-  m_Name: Platform short ice
+  m_Name: Platform short
   m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
