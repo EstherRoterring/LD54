@@ -120,7 +120,8 @@ public class PlayerMovement : MonoBehaviour
         {
             trueSlide();
         }
-        if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K))
+        //if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             OnDashInput();
         }
@@ -212,18 +213,19 @@ public class PlayerMovement : MonoBehaviour
         #endregion
 
         #region DASH CHECKS
-        if (CanDash() && LastPressedDashTime > 0)
+        if (CanDash() && LastPressedDashTime > 0 && CanSlide() == false && !IsJumping)
         {
             //Freeze game for split second. Adds juiciness and a bit of forgiveness over directional input
             Sleep(Data.dashSleepTime);
 
             //If not direction pressed, dash forward
+            /*
             if (_moveInput != Vector2.zero)
                 _lastDashDir = _moveInput;
             else
                 _lastDashDir = IsFacingRight ? Vector2.right : Vector2.left;
-
-
+            */
+            _lastDashDir = IsFacingRight ? Vector2.right : Vector2.left;
 
             IsDashing = true;
             IsJumping = false;
