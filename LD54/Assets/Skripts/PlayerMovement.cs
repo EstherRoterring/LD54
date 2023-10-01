@@ -405,7 +405,6 @@ public class PlayerMovement : MonoBehaviour
 		
         if (IsFacingRight)
         {
-			
 			float targetSpeed = 1 * groundSlidingMaxSpeed;
             targetSpeed = Mathf.Lerp(RB.velocity.x, targetSpeed, 1);
             //Calculate difference between current velocity and desired velocity
@@ -413,12 +412,10 @@ public class PlayerMovement : MonoBehaviour
 				//Calculate force along x-axis to apply to thr player
 
 			float movement = speedDif * groundSlidingAcceleration;
-            Debug.Log("Ich slide rechts runter target Speed : " + targetSpeed + " Speed dif: " + speedDif + " Movement: " + movement);
             RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
         else
         {
-            
             float targetSpeed = -1 * groundSlidingMaxSpeed;
             targetSpeed = Mathf.Lerp(RB.velocity.x, targetSpeed, 1);
             //Calculate difference between current velocity and desired velocity
@@ -427,7 +424,6 @@ public class PlayerMovement : MonoBehaviour
 
             float movement = speedDif * groundSlidingAcceleration;
             RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
-            Debug.Log("Ich slide links runter target Speed : " + targetSpeed + " Speed dif: " + speedDif + " Movement: " + movement);
         }
 
     }
