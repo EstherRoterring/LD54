@@ -279,6 +279,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4baf48027be511b4db20122e5abe7e6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: -8205624897343799080}
   availableJumps: 5
   groundSlidingMaxSpeed: 30
   groundSlidingAcceleration: 1.5
