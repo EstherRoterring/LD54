@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0b2707273af73d94985c423c49504287
+guid: 53413390269739d44b97f369c68bdd6f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Floppo_Walk_0
+      name: Blop_jump_0
       rect:
         serializedVersion: 2
-        x: 22
+        x: 24
         y: 0
-        width: 54
-        height: 26
+        width: 49
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71f4a65c51b29c04399660ea1e658ce2
-      internalID: 262903504
+      spriteID: 06ee6aead4ddebe4481ac6601591a319
+      internalID: 455926456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floppo_Walk_1
+      name: Blop_jump_1
       rect:
         serializedVersion: 2
-        x: 123
+        x: 125
         y: 0
-        width: 54
-        height: 26
+        width: 49
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef3c3648399752645aaaf0bfcc119465
-      internalID: -1402480376
+      spriteID: 7e73fc10a6571f841857eeb30fa19a3b
+      internalID: -20101732
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floppo_Walk_2
+      name: Blop_jump_2
       rect:
         serializedVersion: 2
-        x: 223
+        x: 224
         y: 0
-        width: 54
-        height: 26
+        width: 49
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dd36513f39d9024d8b312d56ac32c26
-      internalID: 1901211885
+      spriteID: 54a703cef18e67844a12e86016608c6b
+      internalID: -596583205
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floppo_Walk_3
+      name: Blop_jump_3
       rect:
         serializedVersion: 2
         x: 324
-        y: 1
-        width: 54
-        height: 26
+        y: 0
+        width: 49
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f456cb81e02a38947848ddfd8cdf8fee
-      internalID: 1463761822
+      spriteID: 043630740c57cd14c9915e0ddf2d4b1d
+      internalID: 486914449
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floppo_Walk_4
+      name: Blop_jump_4
       rect:
         serializedVersion: 2
         x: 424
         y: 0
-        width: 54
-        height: 26
+        width: 49
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49c19211dd0e92b4fa7e88cd2b0e5b98
-      internalID: 1285981968
+      spriteID: 56e72465f20a1184daac2ed55f92877f
+      internalID: -1284033110
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floppo_Walk_5
+      name: Blop_jump_5
       rect:
         serializedVersion: 2
         x: 524
         y: 0
-        width: 54
-        height: 26
+        width: 49
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,20 +236,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cca35bb1a3a354a49b94c438085bf196
-      internalID: -675615573
+      spriteID: 8adb3b9942d4a564a93f35c68de41324
+      internalID: -957759178
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Floppo_Walk_6
+      name: Blop_jump_6
       rect:
         serializedVersion: 2
         x: 624
         y: 0
-        width: 54
-        height: 26
+        width: 49
+        height: 47
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,8 +257,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76ea29df65b21e247bc8f1e2bfd557e4
-      internalID: 1087314141
+      spriteID: e50de962bc8ef7a41aebfc76edc3b674
+      internalID: -2067766986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Blop_jump_7
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 0
+        width: 49
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea5da3e362dd4e4cbc90bb14dc76fbe
+      internalID: -941952201
       vertices: []
       indices: 
       edges: []
@@ -274,13 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Floppo_Walk_0: 262903504
-      Floppo_Walk_1: -1402480376
-      Floppo_Walk_2: 1901211885
-      Floppo_Walk_3: 1463761822
-      Floppo_Walk_4: 1285981968
-      Floppo_Walk_5: -675615573
-      Floppo_Walk_6: 1087314141
+      Blop_jump_0: 455926456
+      Blop_jump_1: -20101732
+      Blop_jump_2: -596583205
+      Blop_jump_3: 486914449
+      Blop_jump_4: -1284033110
+      Blop_jump_5: -957759178
+      Blop_jump_6: -2067766986
+      Blop_jump_7: -941952201
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

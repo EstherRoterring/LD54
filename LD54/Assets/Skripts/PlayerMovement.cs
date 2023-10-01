@@ -92,9 +92,18 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        //Speed ist wichtig für die animation
+        //Speed > 0.1 Laufanimation, JumpORDontJump == True für springen
         //Debug.Log(Mathf.Abs(RB.velocity.x));
         animator.SetFloat("Speed", Mathf.Abs(RB.velocity.x));
+        if (Input.GetKey(KeyCode.Space))
+        {
+            animator.SetBool("JumpORDontJump", true);
+        }
+        else
+        {
+            animator.SetBool("JumpORDontJump", false);
+        }
+        
         
         #region TIMERS
         LastOnGroundTime -= Time.deltaTime;
