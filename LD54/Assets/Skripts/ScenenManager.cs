@@ -21,7 +21,7 @@ public class ScenenManager : MonoBehaviour
     }
 
     public void GoToGameScene(){
-        SceneManager.LoadScene("GameScene");
+        SceneManager.LoadScene("Level 1");
     }
     
 
