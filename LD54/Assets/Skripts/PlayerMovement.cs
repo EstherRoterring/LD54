@@ -435,6 +435,8 @@ public class PlayerMovement : MonoBehaviour
 	    Debug.Log("player enter");
 	    if (other.gameObject.tag == "zielFlagge")
 	    {
+		    Debug.Log("ziel erreicht");
+		    Destroy(other.gameObject);
 		    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	    }
     }
