@@ -18,7 +18,10 @@ public class PlayerMovement : MonoBehaviour
 	//HOW TO: to add the scriptable object, right-click in the project window -> create -> Player Data
 	//Next, drag it into the slot in playerMovement on your player
 	public int availableJumps = 5;
-	public PlayerData Data;
+	public float groundSlidingMaxSpeed = 30f;
+    public float groundSlidingAcceleration = 1.5f;
+	public bool canGroundSlide = false;
+    public PlayerData Data;
 
 	#region Variables
 	//Components
@@ -61,7 +64,8 @@ public class PlayerMovement : MonoBehaviour
 
     [Header("Layers & Tags")]
 	[SerializeField] private LayerMask _groundLayer;
-	#endregion
+    [SerializeField] private LayerMask _slideLayer;
+    #endregion
 
     private void Awake()
 	{
@@ -89,7 +93,7 @@ public class PlayerMovement : MonoBehaviour
 		_moveInput.x = Input.GetAxisRaw("Horizontal");
 		_moveInput.y = Input.GetAxisRaw("Vertical");
 
-		if (_moveInput.x != 0)
+        if (_moveInput.x != 0)
 			CheckDirectionToFace(_moveInput.x > 0);
 
 		if(Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
@@ -103,19 +107,33 @@ public class PlayerMovement : MonoBehaviour
             //Debug.Log("Small Jump");
             OnJumpUpInput();
 		}
-		#endregion
+        if (_moveInput.y < 0 && canGroundSlide)
+        {
+			trueSlide();
+        }
+        #endregion
 
-		#region COLLISION CHECKS
-		if (!IsJumping)
+        #region COLLISION CHECKS
+        if (!IsJumping)
 		{
 			//Ground Check
 			if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _groundLayer) && !IsJumping) //checks if set box overlaps with ground
 			{
 				LastOnGroundTime = Data.coyoteTime; //if so sets the lastGrounded to coyoteTime
-            }		
+            }
 
-			//Right Wall Check
-			if (((Physics2D.OverlapBox(_frontWallCheckPoint.position, _wallCheckSize, 0, _groundLayer) && IsFacingRight)
+			//Slide Check
+            if (Physics2D.OverlapBox(_groundCheckPoint.position, _groundCheckSize, 0, _slideLayer) && !IsJumping) //checks if set box overlaps with Slide
+            {
+				//LastOnGroundTime = Data.coyoteTime; //if so sets the lastGrounded to coyoteTime
+				canGroundSlide = true;
+			}
+			else
+			{
+				canGroundSlide = false;
+			}
+            //Right Wall Check
+            if (((Physics2D.OverlapBox(_frontWallCheckPoint.position, _wallCheckSize, 0, _groundLayer) && IsFacingRight)
 					|| (Physics2D.OverlapBox(_backWallCheckPoint.position, _wallCheckSize, 0, _groundLayer) && !IsFacingRight)) && !IsWallJumping)
 				LastOnWallRightTime = Data.coyoteTime;
 
@@ -174,16 +192,20 @@ public class PlayerMovement : MonoBehaviour
 		}
 		#endregion
 
-		#region SLIDE CHECKS
+		#region WALL SLIDE CHECKS
 		if (CanSlide() && ((LastOnWallLeftTime > 0 && _moveInput.x < 0) || (LastOnWallRightTime > 0 && _moveInput.x > 0)))
-			IsSliding = true;
+            IsSliding = true;
 		else
 			IsSliding = false;
-		#endregion
+        #endregion
 
-		#region GRAVITY
-		//Higher gravity if we've released the jump input or are falling
-		if (IsSliding)
+        #region SLIDE CHECK
+
+        #endregion
+
+        #region GRAVITY
+        //Higher gravity if we've released the jump input or are falling
+        if (IsSliding)
 		{
 			SetGravityScale(0);
 		}
@@ -375,8 +397,40 @@ public class PlayerMovement : MonoBehaviour
 		//The force applied can't be greater than the (negative) speedDifference * by how many times a second FixedUpdate() is called. For more info research how force are applied to rigidbodies.
 		movement = Mathf.Clamp(movement, -Mathf.Abs(speedDif)  * (1 / Time.fixedDeltaTime), Mathf.Abs(speedDif) * (1 / Time.fixedDeltaTime));
 
-		RB.AddForce(movement * Vector2.up);
+        RB.AddForce(movement * Vector2.up);
 	}
+
+	private void trueSlide()
+	{
+		
+        if (IsFacingRight)
+        {
+			
+			float targetSpeed = 1 * groundSlidingMaxSpeed;
+            targetSpeed = Mathf.Lerp(RB.velocity.x, targetSpeed, 1);
+            //Calculate difference between current velocity and desired velocity
+            float speedDif = targetSpeed - RB.velocity.x;
+				//Calculate force along x-axis to apply to thr player
+
+			float movement = speedDif * groundSlidingAcceleration;
+            Debug.Log("Ich slide rechts runter target Speed : " + targetSpeed + " Speed dif: " + speedDif + " Movement: " + movement);
+            RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
+        }
+        else
+        {
+            
+            float targetSpeed = -1 * groundSlidingMaxSpeed;
+            targetSpeed = Mathf.Lerp(RB.velocity.x, targetSpeed, 1);
+            //Calculate difference between current velocity and desired velocity
+            float speedDif = targetSpeed - RB.velocity.x;
+            //Calculate force along x-axis to apply to thr player
+
+            float movement = speedDif * groundSlidingAcceleration;
+            RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
+            Debug.Log("Ich slide links runter target Speed : " + targetSpeed + " Speed dif: " + speedDif + " Movement: " + movement);
+        }
+
+    }
     #endregion
 
 
@@ -411,7 +465,8 @@ public class PlayerMovement : MonoBehaviour
 	public bool CanSlide()
     {
 		if (LastOnWallTime > 0 && !IsJumping && !IsWallJumping && LastOnGroundTime <= 0)
-			return true;
+            return true;
+
 		else
 			return false;
 	}
@@ -432,7 +487,7 @@ public class PlayerMovement : MonoBehaviour
     //Bei Ziel in nächste Scene wechseln
     private void OnCollisionEnter2D(Collision2D other)
     {
-	    Debug.Log("player enter");
+	    //Debug.Log("player enter");
 	    if (other.gameObject.tag == "zielFlagge")
 	    {
 		    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
