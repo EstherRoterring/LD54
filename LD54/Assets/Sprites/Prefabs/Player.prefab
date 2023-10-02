@@ -282,9 +282,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: -8205624897343799080}
-  availableJumps: 5
-  groundSlidingMaxSpeed: 40
-  groundSlidingAcceleration: 4
+  availableJumps: 15
+  groundSlidingMaxSpeed: 200
+  groundSlidingAcceleration: 10
   canGroundSlide: 0
   Data: {fileID: 11400000, guid: bd7cad6856820dd448eef1202ac27b3a, type: 2}
   _groundCheckPoint: {fileID: 6019743615949723184}
