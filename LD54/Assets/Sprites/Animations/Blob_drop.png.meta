@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 53413390269739d44b97f369c68bdd6f
+guid: 8ffc0fe8f5749974b9b422c446bf34de
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,169 +117,106 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blop_jump_0
+      name: Blob_drop_0
       rect:
         serializedVersion: 2
-        x: 24
+        x: 9
         y: 0
-        width: 49
-        height: 47
+        width: 81
+        height: 46
       alignment: 9
-      pivot: {x: 0.5, y: 0.3}
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06ee6aead4ddebe4481ac6601591a319
-      internalID: 455926456
+      spriteID: e1438c8be0f84f34e81d2f37b55def23
+      internalID: 593192309
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blop_jump_1
+      name: Blob_drop_1
       rect:
         serializedVersion: 2
-        x: 125
+        x: 109
         y: 0
-        width: 49
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 81
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e73fc10a6571f841857eeb30fa19a3b
-      internalID: -20101732
+      spriteID: 1229bdd299ab34d4eb14ea94865b7379
+      internalID: -1826975558
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blop_jump_2
+      name: Blob_drop_2
       rect:
         serializedVersion: 2
-        x: 224
+        x: 209
         y: 0
-        width: 49
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 81
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54a703cef18e67844a12e86016608c6b
-      internalID: -596583205
+      spriteID: 751d1729090846144acb44f0c6c5f43a
+      internalID: 1992577715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blop_jump_3
+      name: Blob_drop_3
       rect:
         serializedVersion: 2
-        x: 324
+        x: 309
         y: 0
-        width: 49
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 81
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 043630740c57cd14c9915e0ddf2d4b1d
-      internalID: 486914449
+      spriteID: 176bd2f5911b89444928a3803e61b5cb
+      internalID: -713374045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Blop_jump_4
+      name: Blob_drop_4
       rect:
         serializedVersion: 2
-        x: 424
+        x: 409
         y: 0
-        width: 49
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 81
+        height: 46
+      alignment: 9
+      pivot: {x: 0.5, y: 0.27}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 56e72465f20a1184daac2ed55f92877f
-      internalID: -1284033110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blop_jump_5
-      rect:
-        serializedVersion: 2
-        x: 524
-        y: 0
-        width: 49
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8adb3b9942d4a564a93f35c68de41324
-      internalID: -957759178
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blop_jump_6
-      rect:
-        serializedVersion: 2
-        x: 624
-        y: 0
-        width: 49
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e50de962bc8ef7a41aebfc76edc3b674
-      internalID: -2067766986
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Blop_jump_7
-      rect:
-        serializedVersion: 2
-        x: 726
-        y: 0
-        width: 49
-        height: 47
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cea5da3e362dd4e4cbc90bb14dc76fbe
-      internalID: -941952201
+      spriteID: 9a01dba0632d8ea49a165f3a54dc3169
+      internalID: 294145363
       vertices: []
       indices: 
       edges: []
@@ -295,14 +232,11 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Blop_jump_0: 455926456
-      Blop_jump_1: -20101732
-      Blop_jump_2: -596583205
-      Blop_jump_3: 486914449
-      Blop_jump_4: -1284033110
-      Blop_jump_5: -957759178
-      Blop_jump_6: -2067766986
-      Blop_jump_7: -941952201
+      Blob_drop_0: 593192309
+      Blob_drop_1: -1826975558
+      Blob_drop_2: 1992577715
+      Blob_drop_3: -713374045
+      Blob_drop_4: 294145363
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
