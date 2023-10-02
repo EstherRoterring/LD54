@@ -501,8 +501,8 @@ Transform:
   - {fileID: 777807248}
   - {fileID: 916805279}
   - {fileID: 317765359}
-  - {fileID: 1818178653}
   - {fileID: 1537452015}
+  - {fileID: 1818178653}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4214,7 +4214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3745098756948378982, guid: 566447d109e5c8243815482af7ac21e0, type: 3}
       propertyPath: m_Name
-      value: Jump Bar
+      value: UI
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 566447d109e5c8243815482af7ac21e0, type: 3}

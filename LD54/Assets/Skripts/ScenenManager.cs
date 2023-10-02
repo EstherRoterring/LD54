@@ -18,6 +18,10 @@ public class ScenenManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKeyUp(KeyCode.R))
+        {
+            ResetScene();
+        }
     }
 
     public void GoToGameScene(){
@@ -31,5 +35,10 @@ public class ScenenManager : MonoBehaviour
 
     public void Exit(){
         Application.Quit();
+    }
+
+    public void ResetScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }

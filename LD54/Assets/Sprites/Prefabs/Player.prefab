@@ -77,6 +77,7 @@ GameObject:
   - component: {fileID: 6019743616225512553}
   - component: {fileID: -8205624897343799080}
   - component: {fileID: 9180697168731020086}
+  - component: {fileID: 9165614855525551905}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -333,6 +334,18 @@ MonoBehaviour:
   jumps: []
   "anzahlMaxSpr\xFCnge": 20
   pm: {fileID: 6019743616225512553}
+--- !u!114 &9165614855525551905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019743616225512546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16f29bfbbf5fe4f48889c59fb07df640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6019743616822950191
 GameObject:
   m_ObjectHideFlags: 0
