@@ -103,6 +103,8 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("JumpOrDontJump", false);
         }
+        //triggers Falling Animation
+        animator.SetFloat("Falling", RB.velocity.y);
         
         
         #region TIMERS
