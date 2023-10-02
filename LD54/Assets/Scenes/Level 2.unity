@@ -2467,10 +2467,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wall_DeadTree_0
       objectReference: {fileID: 0}
-    - target: {fileID: 3424762119022668013, guid: cce9a15796f54ed449acd69a20fffde2, type: 3}
-      propertyPath: m_Layer
-      value: 3
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cce9a15796f54ed449acd69a20fffde2, type: 3}
 --- !u!1001 &7259728113573516745
@@ -2483,10 +2479,6 @@ PrefabInstance:
     - target: {fileID: 7259728113028045266, guid: a403bc5a351e1f4489bdba9b4187cd24, type: 3}
       propertyPath: m_Name
       value: Wall_DeadTree_1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7259728113028045266, guid: a403bc5a351e1f4489bdba9b4187cd24, type: 3}
-      propertyPath: m_Layer
-      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7259728113028045271, guid: a403bc5a351e1f4489bdba9b4187cd24, type: 3}
       propertyPath: m_RootOrder
