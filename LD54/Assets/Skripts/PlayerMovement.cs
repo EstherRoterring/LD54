@@ -88,7 +88,6 @@ public class PlayerMovement : MonoBehaviour
     {
         SetGravityScale(Data.gravityScale);
         IsFacingRight = true;
-        
     }
 
     private void Update()
@@ -96,18 +95,16 @@ public class PlayerMovement : MonoBehaviour
         //Speed > 0.1 Laufanimation, JumpORDontJump == True für springen
         //Debug.Log(Mathf.Abs(RB.velocity.x));
         animator.SetFloat("Speed", Mathf.Abs(RB.velocity.x));
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-             animator.SetBool("JumpOrDontJump", true);
+            animator.SetBool("JumpORDontJump", true);
         }
-        if (Input.GetKeyUp(KeyCode.Space))
+        else
         {
-            animator.SetBool("JumpOrDontJump", false);
+            animator.SetBool("JumpORDontJump", false);
         }
-
-
-
-
+        
+        
         #region TIMERS
         LastOnGroundTime -= Time.deltaTime;
         LastOnWallTime -= Time.deltaTime;
