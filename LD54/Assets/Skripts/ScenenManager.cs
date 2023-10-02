@@ -25,7 +25,7 @@ public class ScenenManager : MonoBehaviour
     }
 
     public void GoToGameScene(){
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("CutScene Mama");
     }
     
 
