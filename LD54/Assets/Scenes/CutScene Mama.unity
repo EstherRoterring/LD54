@@ -1003,7 +1003,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Flappo! and you''re lost :(
+  m_text: 'Flappo! You''re lost :(
 
     Follow the (biodegradable) candy wrapper
     you left behind to find your way home!'
