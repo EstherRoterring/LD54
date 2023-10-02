@@ -22,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     //HOW TO: to add the scriptable object, right-click in the project window -> create -> Player Data
     //Next, drag it into the slot in playerMovement on your player
-    public int availableJumps = 5;
+    public int availableJumps = 5 ; 
     public float groundSlidingMaxSpeed = 30f;
     public float groundSlidingAcceleration = 1.5f;
     public bool canGroundSlide = false;
