@@ -8,6 +8,8 @@ public class Tutorial : MonoBehaviour
     public GameObject tasteA;
     public GameObject tasteSpace;
     public GameObject tasteSlide;
+    public GameObject tasteE;
+    public GameObject tasteZ;
     
     // Start is called before the first frame update
     void Start()
@@ -33,6 +35,14 @@ public class Tutorial : MonoBehaviour
         if (Input.GetKey(KeyCode.S)||Input.GetKey(KeyCode.DownArrow))
         {
             Destroy(tasteSlide);
+        }
+        if (Input.GetKey(KeyCode.E))
+        {
+            Destroy(tasteE);
+        }
+        if (Input.GetKey(KeyCode.Z))
+        {
+            Destroy(tasteZ);
         }
     }
 }
