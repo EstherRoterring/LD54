@@ -122,13 +122,13 @@ public class PlayerMovement : MonoBehaviour
         if (_moveInput.x != 0)
             CheckDirectionToFace(_moveInput.x > 0);
 
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.C) || Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.Space) && availableJumps > 0)
         {
             //Debug.Log("Jump");
             OnJumpInput();
         }
 
-        if (Input.GetKeyUp(KeyCode.Space) || Input.GetKeyUp(KeyCode.C) || Input.GetKeyUp(KeyCode.J))
+        if (Input.GetKeyUp(KeyCode.Space) && availableJumps > 0)
         {
             //Debug.Log("Small Jump");
             OnJumpUpInput();
@@ -138,7 +138,7 @@ public class PlayerMovement : MonoBehaviour
             trueSlide();
         }
         //if (Input.GetKeyDown(KeyCode.X) || Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.K) || Input.GetKeyDown(KeyCode.Space))
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && availableJumps > 0)
         {
             OnDashInput();
         }
@@ -449,7 +449,7 @@ public class PlayerMovement : MonoBehaviour
         LastPressedJumpTime = 0;
         LastOnGroundTime = 0;
         availableJumps--;
-        Debug.Log(availableJumps);
+        //Debug.Log(availableJumps);
         #region Perform Jump
         //We increase the force applied if we are falling
         //This means we'll always feel like we jump the same amount 
@@ -528,6 +528,7 @@ public class PlayerMovement : MonoBehaviour
 
         //Dash over
         IsDashing = false;
+        availableJumps--;
     }
 
     //Short period before the player is able to dash again
