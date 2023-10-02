@@ -114,7 +114,7 @@ public class PlayerMovement : MonoBehaviour
         LastPressedJumpTime -= Time.deltaTime;
         LastPressedDashTime -= Time.deltaTime;
         #endregion
-
+     
         #region INPUT HANDLER
         _moveInput.x = Input.GetAxisRaw("Horizontal");
         _moveInput.y = Input.GetAxisRaw("Vertical");
@@ -377,7 +377,6 @@ public class PlayerMovement : MonoBehaviour
         float targetSpeed = _moveInput.x * Data.runMaxSpeed;
         //We can reduce are control using Lerp() this smooths changes to are direction and speed
         targetSpeed = Mathf.Lerp(RB.velocity.x, targetSpeed, lerpAmount);
-
         #region Calculate AccelRate
         float accelRate;
 
@@ -559,7 +558,8 @@ public class PlayerMovement : MonoBehaviour
             float speedDif = targetSpeed - RB.velocity.x;
             //Calculate force along x-axis to apply to thr player
 
-            float movement = speedDif * groundSlidingAcceleration;
+            float movement = speedDif * groundSlidingAcceleration * Time.deltaTime * 100;
+
             RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
         else
@@ -570,7 +570,8 @@ public class PlayerMovement : MonoBehaviour
             float speedDif = targetSpeed - RB.velocity.x;
             //Calculate force along x-axis to apply to thr player
 
-            float movement = speedDif * groundSlidingAcceleration;
+            float movement = speedDif * groundSlidingAcceleration * Time.deltaTime * 100; ;
+
             RB.AddForce(movement * Vector2.right, ForceMode2D.Force);
         }
 
