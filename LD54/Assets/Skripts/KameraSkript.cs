@@ -8,9 +8,13 @@ public class KameraSkript : MonoBehaviour
     public CinemachineVirtualCamera VcCamera;
     public GameObject player;
     public GameObject ziel;
+    public float cameraSize = 4;
+    public float zoomedCameraSize = 8;
     
     public KeyCode zoomOut;
     public KeyCode zielAnzeigen;
+    
+    
     
     void Start()
     {
@@ -24,16 +28,17 @@ public class KameraSkript : MonoBehaviour
         if (Input.GetKey(zoomOut))
         {
             
-            VcCamera.m_Lens.OrthographicSize = 8;
+            VcCamera.m_Lens.OrthographicSize = zoomedCameraSize;
         }
         else
         {
-            VcCamera.m_Lens.OrthographicSize = 4;
+            VcCamera.m_Lens.OrthographicSize = cameraSize;
         }
 
         //Kamera zeigt Ziel
         if (Input.GetKey(zielAnzeigen))
         {
+            VcCamera.m_Lens.OrthographicSize = zoomedCameraSize;
             VcCamera.Follow = ziel.transform;
         }
         else
