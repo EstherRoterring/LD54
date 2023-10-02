@@ -344,7 +344,15 @@ public class PlayerMovement : MonoBehaviour
     }
     public void OnDashInput()
     {
-        LastPressedDashTime = Data.dashInputBufferTime;
+        if (CanSlide())
+        {
+            LastPressedDashTime = 0;
+        }
+        else
+        {
+            LastPressedDashTime = Data.dashInputBufferTime;
+        }
+        
     }
     #endregion
 
