@@ -1006,7 +1006,10 @@ MonoBehaviour:
   m_text: 'Flappo! You''re lost :(
 
     Follow the (biodegradable) candy wrapper
-    you left behind to find your way home!'
+    you left behind to find your way home!
+
+    Watch out! You''re exhausted and
+    therefore your jumps are limited.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
   m_sharedMaterial: {fileID: 2147374, guid: 0161d805a3764c089bef00bfe00793f5, type: 2}
