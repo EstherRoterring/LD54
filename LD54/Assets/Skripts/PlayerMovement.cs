@@ -103,8 +103,10 @@ public class PlayerMovement : MonoBehaviour
         {
             animator.SetBool("JumpOrDontJump", false);
         }
-        //triggers Falling Animation
+        //triggers Falling/Dash Animation
         animator.SetFloat("Falling", RB.velocity.y);
+        animator.SetBool("IsDashing", IsDashing);
+        
         
         
         #region TIMERS
