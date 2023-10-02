@@ -97,11 +97,11 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(RB.velocity.x));
         if (Input.GetKey(KeyCode.Space))
         {
-            animator.SetBool("JumpORDontJump", true);
+            animator.SetBool("JumpOrDontJump", true);
         }
         else
         {
-            animator.SetBool("JumpORDontJump", false);
+            animator.SetBool("JumpOrDontJump", false);
         }
         
         
